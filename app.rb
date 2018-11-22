@@ -51,7 +51,7 @@ post '/visit' do
   @name = params[:username]
   @phone = params[:phone]
   @time = params[:time]
-  @var = params[:variable]
+  @barber = params[:barber]
   @color = params[:color]
 
   #Для каждой пары ключ-значение
@@ -74,7 +74,7 @@ post '/visit' do
   # end
 
   f = File.open './public/users.txt', 'a'
-  f.write "#{@name}, #{@phone}, #{@time}, #{@var}, #{@color}\n"
+  f.write "#{@name}, #{@phone}, #{@time}, #{@barber}, #{@color}\n"
   f.close
 
   erb :visit
