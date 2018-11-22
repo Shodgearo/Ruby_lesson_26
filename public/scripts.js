@@ -1,0 +1,3 @@
+// comment
+
+alert('Hello');

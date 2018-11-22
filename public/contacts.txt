@@ -1,0 +1,5 @@
+sanya.93.26@bk.ru, Hello, Shod.
+sanya.93.26@bk.ru, :enable_starttls_auto => true,
+sanya.93.26@bk.ru, 
+    :enable_starttls_auto => true,
+sanya.93.26@bk.ru, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum ultrices diam, nec rutrum tortor venenatis vel. Vivamus non nisi erat. Etiam ullamcorper bibendum leo et ullamcorper. Morbi nulla turpis, facilisis sit amet placerat nec, dapibus et ex. Maecenas vel ultricies ex, non elementum nisi. Suspendisse purus magna, elementum ut dignissim a, lobortis a mauris. Nullam lacinia nec massa non venenatis. Sed lacinia commodo lobortis. Proin tellus diam, sagittis at imperdiet id, dictum vitae felis. Pellentesque tempus nisi sed eros fermentum, quis egestas erat dictum. Aenean auctor rhoncus orci eu aliquam. Morbi et sagittis metus. Donec placerat nisl ut accumsan tincidunt. 

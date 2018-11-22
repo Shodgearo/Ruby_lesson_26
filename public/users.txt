@@ -1,0 +1,10 @@
+LogIN, 123321, 13.20
+Shod, 09596056, 22.10, 23,45
+LogIN, 123321, 13.20, ,
+admin, 123321, 13.20
+Shodgearo, 42, 02.4.2018, 15,42, Walter White
+LogIN, 1, 13.20, Walter White, 
+LogIN, 123321, 02.4.2018, 15,42, Walter White, #7bd148
+admin, 1, 13.20, Walter White, #a4bdfc
+LogIN, 09596056, 02.4.2018, 15,42, Jessie Pinkman, #5484ed
+LogIN, 123321, 02.4.2018, 15,42, Walter White, #e1e1e1
