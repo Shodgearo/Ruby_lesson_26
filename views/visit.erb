@@ -11,7 +11,7 @@
   </div>
   <div class="form-group">
     <label>Enter time</label>
-    <input name="time" type="text" class="form-control" placeholder="Enter date and time" value="<%=@time %>">
+    <input id="datetimepicker" name="time" type="text" class="form-control" placeholder="Enter date and time" value="<%=@time %>">
   </div>
   <div class="form-group">
   <select name="barber" class="form-control">
@@ -41,5 +41,7 @@
 </form>
 
 <script type="text/javascript" charset="utf-8">
+    jQuery.datetimepicker.setLocale('en');
     $('#color').simplecolorpicker();
+    $('#datetimepicker').datetimepicker();
 </script>
