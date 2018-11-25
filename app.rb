@@ -5,6 +5,18 @@ require 'sinatra/reloader'
 require 'pony'
 require 'sqlite3'
 
+def is_exists? db, name
+  db.execute('SELECT * FROM Barbers WHERE name = ?', [name]).length > 0
+end
+
+def seed_db db, barbers
+  barbers.each do |item|
+    if !is_exists? db, item
+      db.execute 'INSERT INTO Barbers(Name) VALUES(?)', [item]
+    end
+  end
+end
+
 def get_db
   db = SQLite3::Database.new 'BarberShop'
   db.results_as_hash = true
@@ -21,6 +33,13 @@ configure do
 	  `Barber`	TEXT,
 	  `Color`	TEXT
   )'
+
+  db.execute 'CREATE TABLE IF NOT EXISTS `Barbers` (
+	  `id`	INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE,
+	  `Name`	TEXT
+  )'
+
+  seed_db db, ["Walter", "Jessie", "Gus"]
 end
 
 get '/' do
@@ -104,5 +123,13 @@ post '/visit' do
 end
 
 get '/showusers' do
-  erb "Hello World"
+  @mas = []
+  @db_value = Hash.new
+
+  db = get_db
+  db.execute 'select * from Users order by id desc --' do |row|
+    @mas << row
+  end
+
+  erb :showusers
 end
