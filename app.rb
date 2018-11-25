@@ -6,7 +6,9 @@ require 'pony'
 require 'sqlite3'
 
 def get_db
-  SQLite3::Database.new 'BarberShop'
+  db = SQLite3::Database.new 'BarberShop'
+  db.results_as_hash = true
+  return db
 end
 
 configure do
@@ -99,4 +101,8 @@ post '/visit' do
   f.close
 
   erb :visit
+end
+
+get '/showusers' do
+  erb "Hello World"
 end
