@@ -9,3 +9,4 @@ admin, 1, 13.20, Walter White, #a4bdfc
 LogIN, 09596056, 02.4.2018, 15,42, Jessie Pinkman, #5484ed
 LogIN, 123321, 02.4.2018, 15,42, Walter White, #e1e1e1
 LogIN, 1234242, 13.20, Jessie Pinkman, #a4bdfc
+LogIN, 1, 2018/11/05 11:42, Walter White, #46d6db
