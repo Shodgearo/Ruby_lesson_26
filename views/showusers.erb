@@ -1,0 +1,27 @@
+<h2>Write list barbershop</h2>
+
+<table class="table table-striped">
+  <thead>
+     <tr>
+       <th>ID</th>
+       <th>Name</th>
+       <th>Phone</th>
+       <th>Time</th>
+       <th>Barber</th>
+       <th>Color</th>
+     </tr>
+   </thead>
+
+  <tbody>
+     <% @mas.each do |row| %>
+       <tr>
+         <td><%=row['id']%></td>
+         <td><%=row['Name']%></td>
+         <td><%=row['Phone']%></td>
+         <td><%=row['Time']%></td>
+         <td><%=row['Barber']%></td>
+         <td><%=row['Color']%></td>
+       </tr>
+     <% end %>
+  </tbody>
+</table>
