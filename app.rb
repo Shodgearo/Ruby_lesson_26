@@ -113,19 +113,9 @@ post '/visit' do
     end
   end
 
-  # @error = hash.select {|key,_| params[key] == ""}.values.join(", ")
-  #
-  # if @error != ''
-  #   return erb :visit
-  # end
-
   db = get_db
   db.execute 'insert into Users(name, phone, time, barber, color) values(?, ?, ?, ?, ?)',
               [@name, @phone, @time, @barber, @color]
-
-  f = File.open './public/users.txt', 'a'
-  f.write "#{@name}, #{@phone}, #{@time}, #{@barber}, #{@color}\n"
-  f.close
 
   erb :visit
 end
