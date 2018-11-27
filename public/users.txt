@@ -10,3 +10,7 @@ LogIN, 09596056, 02.4.2018, 15,42, Jessie Pinkman, #5484ed
 LogIN, 123321, 02.4.2018, 15,42, Walter White, #e1e1e1
 LogIN, 1234242, 13.20, Jessie Pinkman, #a4bdfc
 LogIN, 1, 2018/11/05 11:42, Walter White, #46d6db
+Shodgearo, 09596056, 2018/10/30 18:00, Jessie, #dc2127
+Shodgearo, 123, 2018/10/30 14:03, Jessie, #5484ed
+Shodgearo, 123, 2018/10/30 14:03, Jessie, #5484ed
+Shodgearo, 1234242, 2019/01/10 17:00, Gus, #dc2127

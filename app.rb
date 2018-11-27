@@ -5,6 +5,11 @@ require 'sinatra/reloader'
 require 'pony'
 require 'sqlite3'
 
+def get_barber
+  db = get_db
+  db.execute 'SELECT * FROM Barbers'
+end
+
 def is_exists? db, name
   db.execute('SELECT * FROM Barbers WHERE name = ?', [name]).length > 0
 end
@@ -51,8 +56,7 @@ get '/about' do
 end
 
 get '/visit' do
-  db = get_db
-  @result = db.execute 'SELECT * FROM Barbers'
+  @result = get_barber
 
   erb :visit
 end
@@ -94,6 +98,7 @@ post '/visit' do
   @time = params[:time]
   @barber = params[:barber]
   @color = params[:color]
+  @result = get_barber
 
   #Для каждой пары ключ-значение
   hash = { :username => 'Enter name',
